@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Álbum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="header-bar">
+        Compact-Disc @
+    </header>
+
+    <!-- Navegação com a barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main com informações detalhadas do álbum -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Imagem do álbum em formato maior -->
+            <div class="col-md-6">
+                <img id="albumImage" src="pass.jpeg" alt="Imagem do Álbum" class="img-fluid">
+            </div>
+            <!-- Título e sinopse do álbum -->
+  <h2 id="albumTitle"> All Things Must Pass</h2>
+  <p id="albumDescription"> Lançado em 1970, All Things Must Pass é o primeiro álbum solo de George Harrison após a separação dos Beatles e é amplamente considerado uma de suas obras-primas. O álbum mistura rock, folk, música experimental e espiritualidade, refletindo tanto o processo de luto pela dissolução dos Beatles quanto uma busca por autoexpressão e iluminação. Com uma sonoridade rica e expansiva, combinando guitarras elétricas e influências de música indiana, a produção de Phil Spector contribui para um som grandioso, com camadas de instrumentos e vocais. As faixas abordam temas de amor, perda, e a aceitação do fluxo da vida, com destaque para o single icônico "My Sweet Lord". All Things Must Pass ajudou a solidificar Harrison como um artista solo respeitado.</p>
+ <h2 id="albumTitle">Tracklist</h2>
+ <p id="albumDescription"> <strong>Lado 1:</strong> I'd Have You Anytime -
+    My Sweet Lord -
+    Wah-Wah -
+    Isn't It a Pity.
+    <p id="albumDescription"> <strong>Lado 2:</strong>
+    What Is Life -
+    If Not for You -
+    Behind That Locked Door - 
+    Let It Down -
+    Run of the Mill.
+    <p id="albumDescription"> <strong>Lado 3:</strong> Beware of Darkness -
+        Apple Scruffs -
+        Ballad of Sir Frankie Crisp (Let It Roll) -
+        Awaiting on You All -
+        All Things Must Pass.
+    <p id="albumDescription"> <strong>Lado 2:</strong> I Dig Love -
+        Art of Dying -
+        Isn't It a Pity (Version 2) -
+        Hear Me Lord. </p>
+
+            <div class="col-md-6">
+                <!-- Resumo do álbum -->
+                <h2 id="albumTitle"></h2>
+                <p id="albumDescription"></p>
+
+                <div class="container mt-5">
+                    <h2>Avalie o Álbum</h2>
+            
+                    <!-- Sistema de avaliação de estrelas -->
+                    <div id="starRating" class="d-flex">
+                        <!-- Estrelas serão geradas dinamicamente com JavaScript -->
+                    </div>
+                    <div id="ratingMessage" class="mt-2"></div>
+            
+                    <h4 class="mt-4">Resenha:</h4>
+                    <textarea id="reviewText" class="form-control" rows="4"></textarea>
+                    <button id="submitReview" class="btn btn-primary mt-2">Enviar Resenha</button>
+            
+                    <h4 class="mt-4">Resenhas:</h4>
+                    <div id="reviewsList">
+                        <!-- Resenhas serão exibidas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
